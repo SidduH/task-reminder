@@ -1,0 +1,42 @@
+{
+  "name": "Task",
+  "plural": "Tasks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "time": {
+      "type": "date",
+      "required": true
+    },
+    "priority": {
+      "type": "number"
+    },
+    "type": {
+      "type": "boolean",
+      "default": false
+    },
+    "alertBefore": {
+      "type": "date"
+    },
+    "status": {
+      "type": "string",
+      "default": "scheduled"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "person":{
+      "type":"belongsTo",
+      "model":"Person"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
