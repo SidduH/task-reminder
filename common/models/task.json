@@ -32,9 +32,9 @@
   },
   "validations": [],
   "relations": {
-    "person":{
-      "type":"belongsTo",
-      "model":"Person"
+    "person": {
+      "type": "belongsTo",
+      "model": "Person"
     }
   },
   "acls": [],

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Hello User </title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#addTask").click(function () {
+                alert("hello js");
+                $.ajax({
+                    type: "POST",
+                    url: '/addTask',
+                    data: "data",
+                    success: function (resultData) {
+                        alert("Save Complete" + resultData);
+                    },
+                    dataType: dataType
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p> Welcome user </p>
+    <div>
+        Welcome to home
+        <form action="addTask" method="POST">
+            <label> Priority </label>
+            <select name="Priority">
+  <option value="1">One - Alert every 1 hour </option>
+  <option value="2">Two - Alert every 2 hour </option>
+  <option value="3">Three- Alert every 3 hour</option>
+  <option value="4">Four - Alert every 4 hour</option>
+</select> <br />
+            <input type="button" id="addTask" name="addTask" value="Add A Task" onclick="task.js" /> <br />
+
+        </form>
+    </div>
+    <!--<input type="button" name="add Task" onclick="addTask.h"-->
+</body>
+
+</html>

@@ -39,11 +39,11 @@
     "dataSource": null
   },
   "Person": {
-    "dataSource": "db",
+    "dataSource": "commondb",
     "public": true
   },
   "Task": {
-    "dataSource": "db",
+    "dataSource": "commondb",
     "public": true
   }
 }

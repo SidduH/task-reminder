@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "commondb": {
+    "host": "mongo",
+    "port": 27017,
+    "url": "mongodb://127.0.0.1:27017/commondb",
+    "database": "commondb",
+    "name": "commondb",
+    "user": "admin",
+    "password": "admin",
+    "connector": "mongodb"
   }
 }
