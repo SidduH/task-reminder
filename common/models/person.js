@@ -2,7 +2,9 @@
 const request = require('request');
 const signup_url = "https://sandbox.unocoin.co/api/v1/authentication/signup";
 const signin_url = "https://sandbox.unocoin.co/api/v1/authentication/signin";
-const access_token = "a49830bda3844b749a78818da420076ef9471d5d";
+const access_token = "e242259a83917f1e27bbc40c608bd1f27a18df0c";
+
+
 module.exports = function (Person) {
     Person.signup = function (mailid, pass, cb) {
         request.post({
